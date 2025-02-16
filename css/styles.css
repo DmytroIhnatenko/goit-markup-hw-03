@@ -258,8 +258,7 @@ address {
 
 .team {
   width: 100%;
-  padding-top: 120px;
-  padding-bottom: 156px;
+  padding: 120px 0 120px;
   background-color: #f4f4fd;
   text-align: center;
 }
@@ -271,6 +270,12 @@ address {
 .team-list li:first-child {
   background-color: #ffffff;
 }
+.team-list-item.first-item {
+  border-radius: 0px 0px 4px 4px;
+}
+.team-info {
+  padding: 32px 0;
+}
 
 .team-title {
   font-size: 36px;
@@ -279,13 +284,12 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-transform: capitalize;
-  margin-bottom: 40px;
+  margin-bottom: 72px;
 }
 .team-list {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  justify-content: center;
 }
 .team-list-item {
   width: 264px;
@@ -296,7 +300,7 @@ address {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: space-between;
   padding-bottom: 32px;
 }
@@ -308,13 +312,12 @@ address {
   border-top-right-radius: 4px;
 }
 .team-member-name {
-  .team-member-name {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-  }
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .team-member-role {
@@ -322,6 +325,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
 .team-list-item img {
   background-color: transparent;
